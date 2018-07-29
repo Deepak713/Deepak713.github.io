@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MY FIRST vr SCENE</title>
+
+    <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+ <script src="https://unpkg.com/aframe-particle-system-component@1.0.5/dist/aframe-particle-system-component.min.js"></script>
+</head>
+<body>
+<a-scene>
+<a-assets>
+<img id= "texture" src= "images/texture1.jpg">
+</a-assets>
+
+    <a-entity position="0 2.25 -5" particle-system="preset: rain"></a-entity>
+    <a-sky src="images/iceland.jpg"></a-sky>
+
+    <a-sound src="src: url(rain.mp3)" autoplay="true" position="0 2 5"></a-sound>
+
+    <a-assets>
+      <img id="house" src="images/Wall.jpg">
+    
+      <img id="palace" src="images/palace.jpg"
+ 
+       <img id="house" src="images/Wall.jpg">
+    
+    <a-entity id="grass_&_river">
+      <a-entity id="grass">
+        <a-plane id="grass-1" position="0 -1 0" rotation="-90 0 0" width="20" height="20" src="#images/GroundForest.jpg"></a-plane>
+        <a-plane id="grass-72" position="-20 -1 20" rotation="-90 0 0" width="20" height="20" src="#images/GroundForestMulch.jpg"></a-plane>
+      </a-entity>
+    
+      <img id="daylight" src="images/vp-hdri-08-panorama-preview.jpg">
+      <img id="straw" src="images/starw-bales.jpg">
+      <img id="river" src="images/water_texture.jpg">
+    </a-assets>
+
+<a-sphere position="1 1 1"  radius="0.25" color="yellow" rotation="20 40 30"></a-sphere>
+</a-scene>
+
+</body>
+</html>
